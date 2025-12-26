@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pratyusha Prachi — Portfolio & Mini Games</title>
+  <meta name="description" content="Portfolio of Pratyusha Prachi — student at Miranda House, University of Delhi. Front-end learner building projects and interactive demos." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" />
+  <meta name="theme-color" content="#6b8cff">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#">Pratyusha Prachi</a>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about" data-shortcut="Alt+A">About <span class="key-hint">Alt+A</span></a></li>
+          <li><a href="#projects" data-shortcut="Alt+P">Projects <span class="key-hint">Alt+P</span></a></li>
+          <li class="more-menu" id="moreMenuWrap">
+            <button id="moreToggle" aria-haspopup="true" aria-expanded="false" aria-controls="moreMenu" class="more-btn">More ▾</button>
+            <ul id="moreMenu" class="more-list" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" tabindex="-1" href="#certification">Certification</a></li>
+              <li role="none"><a role="menuitem" tabindex="-1" href="#blog">Blog</a></li>
+              <li role="none"><a role="menuitem" tabindex="-1" href="#research">Research</a></li>
+              <li role="none"><a role="menuitem" tabindex="-1" href="#profile">Profile</a></li>
+            </ul>
+          </li>
+          <li><a href="#games" data-shortcut="Alt+G">Games <span class="key-hint">Alt+G</span></a></li>
+          <li><a href="#contact" data-shortcut="Alt+C">Contact <span class="key-hint">Alt+C</span></a></li>
+          <li><button id="themeToggle" class="theme-btn" aria-pressed="false">Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero container glass" aria-label="Introduction">
+      <div class="hero-left">
+        <h1 class="hero-title">Hi — I'm <span class="accent">Pratyusha Prachi</span></h1>
+        <p class="lead">Student at Miranda House, University of Delhi. I build small, clean front-end projects while learning accessible UI and responsive design.</p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+          <a class="btn outline" href="files/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+
+        <div class="skills-mini" aria-hidden="true">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="false">
+        <div class="avatar-wrap" role="img" aria-label="Profile photo">
+          <img src="images/profile.jpg" alt="Pratyusha Prachi" class="avatar-img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container about" tabindex="-1" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <div class="glass about-grid">
+        <div class="about-text">
+          <p>I'm studying at Miranda House, University of Delhi. I enjoy creating simple UI, practicing responsive layouts and learning JavaScript. I value clarity, accessibility, and calm design.</p>
+          <p class="muted">Currently learning: responsive design, algorithms, and interactive demos.</p>
+        </div>
+
+        <aside class="about-stats" aria-label="Skills and levels">
+          <h3 class="small">Skills</h3>
+          <ul class="skills-list">
+            <li>
+              <strong>HTML</strong>
+              <div class="bar" data-level="90"><span style="width:0%"></span></div>
+            </li>
+            <li>
+              <strong>CSS</strong>
+              <div class="bar" data-level="85"><span style="width:0%"></span></div>
+            </li>
+            <li>
+              <strong>JavaScript</strong>
+              <div class="bar" data-level="65"><span style="width:0%"></span></div>
+            </li>
+            <li>
+              <strong>Git</strong>
+              <div class="bar" data-level="70"><span style="width:0%"></span></div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container projects" tabindex="-1" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-title">Projects</h2>
+      <div class="project-grid">
+        <article class="project-card glass">
+          <img src="images/project1.jpg" alt="" class="project-thumb" loading="lazy" onerror="this.style.display='none'">
+          <h3>Personal Portfolio</h3>
+          <p>A responsive portfolio built with HTML, CSS and JavaScript — this site shows design choices and contact links.</p>
+          <p class="project-links"><a href="https://pratyushaprachi.github.io" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/pratyushaprachi" target="_blank" rel="noopener">Code</a></p>
+        </article>
+
+        <article class="project-card glass">
+          <img src="images/project2.jpg" alt="" class="project-thumb" loading="lazy" onerror="this.style.display='none'">
+          <h3>Number Guessing Game</h3>
+          <p>Small JavaScript practice game — guess the secret number and track your best score locally.</p>
+          <p class="project-links"><a href="#" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/pratyushaprachi" target="_blank" rel="noopener">Code</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GAMES HUB (three polished games integrated) -->
+    <section id="games" class="container projects" tabindex="-1" aria-labelledby="games-heading">
+      <h2 id="games-heading" class="section-title">Mini Game Suite</h2>
+
+      <div class="project-grid">
+
+        <!-- Tic-Tac-Toe -->
+        <article class="project-card glass game-card" id="game-tictactoe" data-game="tictactoe">
+          <h3>Tic‑Tac‑Toe (Unbeatable AI)</h3>
+          <p>Play vs an unbeatable AI (Minimax) or with a friend. Save winning results to the local leaderboard.</p>
+
+          <div class="ttt-controls" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+            <label class="muted">Mode:
+              <select id="ttt-mode">
+                <option value="ai">Play vs AI</option>
+                <option value="2p">2‑Player</option>
+              </select>
+            </label>
+            <button id="ttt-reset" class="btn ghost">Reset</button>
+            <button class="btn outline" id="ttt-leaderboard-btn">Leaderboard</button>
+          </div>
+
+          <div id="ttt-board" class="ttt-board" role="grid" aria-label="Tic tac toe board" tabindex="0"></div>
+
+          <div style="margin-top:8px;display:flex;gap:12px;align-items:center">
+            <div class="muted">Status: <strong id="ttt-status">Ready</strong></div>
+            <div class="muted">Moves: <span id="ttt-moves">0</span></div>
+            <button id="ttt-save" class="btn outline" title="Save to leaderboard">Save Score</button>
+          </div>
+        </article>
+
+        <!-- Memory / Concentration -->
+        <article class="project-card glass game-card" id="game-memory" data-game="memory">
+          <h3>Memory / Concentration</h3>
+          <p>Match pairs of cards. Choose grid size and try to complete with fewest moves and time.</p>
+
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <label class="muted">Grid:
+              <select id="mem-size">
+                <option value="2">2×2 (Very easy)</option>
+                <option value="4" selected>4×4 (Standard)</option>
+                <option value="6">6×6 (Challenging)</option>
+              </select>
+            </label>
+            <button id="mem-start" class="btn ghost">Start</button>
+            <button id="mem-leaderboard-btn" class="btn outline">Leaderboard</button>
+          </div>
+
+          <div id="mem-info" style="margin-top:8px" class="muted">Moves: <span id="mem-moves">0</span> · Time: <span id="mem-time">0s</span></div>
+
+          <div id="mem-board" class="mem-board" aria-live="polite" style="margin-top:8px"></div>
+
+          <div style="margin-top:8px">
+            <button id="mem-save" class="btn outline">Save Result</button>
+          </div>
+        </article>
+
+        <!-- Maze Generator + Solver -->
+        <article class="project-card glass game-card" id="game-maze" data-game="maze">
+          <h3>Maze Generator & Solver</h3>
+          <p>Generate a maze and navigate with arrow keys (or watch the auto-solver). Visualized solving algorithm.</p>
+
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <label class="muted">Size:
+              <select id="maze-size">
+                <option value="11">11×11</option>
+                <option value="21" selected>21×21</option>
+                <option value="31">31×31</option>
+              </select>
+            </label>
+            <button id="maze-gen" class="btn ghost">Generate</button>
+            <button id="maze-solve" class="btn">Auto Solve</button>
+            <button id="maze-leaderboard-btn" class="btn outline">Leaderboard</button>
+          </div>
+
+          <div id="maze-controls-info" class="muted" style="margin-top:8px">Use arrow keys / WASD to move. Steps: <span id="maze-steps">0</span> · Time: <span id="maze-time">0s</span></div>
+
+          <div id="maze-canvas-wrap" style="margin-top:8px">
+            <canvas id="maze-canvas" width="660" height="660" style="max-width:100%;border-radius:8px;background:white"></canvas>
+          </div>
+
+          <div style="margin-top:8px">
+            <button id="maze-save" class="btn outline">Save Result</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS, BLOG, RESEARCH, PROFILE, CONTACT (short versions) -->
+    <section id="certification" class="container certifications" tabindex="-1" aria-labelledby="certs-heading">
+      <h2 id="certs-heading" class="section-title">Certifications</h2>
+      <div class="glass cert-grid">
+        <div class="cert">
+          <h4>Intro to HTML (Example)</h4>
+          <p class="muted">Issued by Example Platform — <a href="#" target="_blank" rel="noopener">Verify</a></p>
+        </div>
+        <div class="cert">
+          <h4>Responsive Web Design (Example)</h4>
+          <p class="muted">Issued by Example Platform — <a href="#" target="_blank" rel="noopener">Verify</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="container blog" tabindex="-1" aria-labelledby="blog-heading">
+      <h2 id="blog-heading" class="section-title">Writing & Posts</h2>
+      <div class="glass blog-grid">
+        <article class="blog-card">
+          <h4><a href="#" target="_blank" rel="noopener">How I started learning front-end</a></h4>
+          <p class="muted">Short excerpt — link to full blog or Medium post.</p>
+        </article>
+        <article class="blog-card">
+          <h4><a href="#" target="_blank" rel="noopener">Small tips for responsive design</a></h4>
+          <p class="muted">Short excerpt — link to full blog.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="container research" tabindex="-1" aria-labelledby="research-heading">
+      <h2 id="research-heading" class="section-title">Research & Papers</h2>
+      <div class="glass">
+        <p>No published papers yet — add summaries and links here if you have any research or longer projects.</p>
+      </div>
+    </section>
+
+    <section id="profile" class="container profile" tabindex="-1" aria-labelledby="profile-heading">
+      <h2 id="profile-heading" class="section-title">Profile & Education</h2>
+      <div class="glass profile-grid">
+        <div>
+          <h3>Education</h3>
+          <p>Miranda House — University of Delhi</p>
+        </div>
+        <div>
+          <h3>Resume</h3>
+          <p><a class="btn outline" href="files/resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact" tabindex="-1" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">Contact</h2>
+      <div class="glass contact-grid">
+        <div class="contact-left">
+          <p>If you'd like to connect, send me a message:</p>
+
+          <form id="contactForm">
+            <label>
+              Your name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+
+            <label>
+              Your email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" placeholder="Hi Pratyusha — I'd like to talk about..." rows="4" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn" type="submit">Send</button>
+              <button class="btn ghost" type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-right" aria-label="Other contact methods">
+          <h4>Find me</h4>
+          <div class="social-links">
+            <a class="social-btn" href="https://github.com/pratyushaprachi" target="_blank" rel="noopener" aria-label="GitHub">...</a>
+            <a class="social-btn" href="https://linkedin.com/in/pratyushaprachi" target="_blank" rel="noopener" aria-label="LinkedIn">...</a>
+            <a class="social-btn" href="https://bsky.app/profile/pratyushaprachi06.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky">...</a>
+            <a class="social-btn" href="mailto:pratyushaprachii06@gmail.com" aria-label="Email">...</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Pratyusha Prachi — Built with care ✨</p>
+    </div>
+  </footer>
+
+  <!-- Leaderboard modal (single, reused) -->
+  <div id="games-leaderboard-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" id="leaderboard-close" aria-label="Close leaderboard">✕</button>
+      <h3 id="leaderboard-title">Leaderboard</h3>
+      <div id="leaderboard-body"></div>
+    </div>
+  </div>
+
+  <div id="shortcut-toast" class="shortcut-toast" aria-hidden="true" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
